@@ -20,7 +20,7 @@ Docker version 18.03.1-ce, build 9ee9f40
 git clone https://github.com/jebincvarghese/docker-reactjs
 cd docker-reactjs
 docker build -t docker-reactjs .
-docker run -p 80:80 docker-reactjs
+docker run -p -d 80:80 docker-reactjs
 
 ```
 Go to [http://localhost](http://localhost)
