@@ -12,7 +12,6 @@ RUN npm run build
 
 
 FROM nginx:1.13.10-alpine
-COPY ./reactjs.conf /etc/nginx/conf.d/reactjs.conf
 RUN mkdir /usr/share/nginx/html/reactjs
 COPY --from=builder /usr/src/app/build /usr/share/nginx/html/reactjs/
 EXPOSE 8083
